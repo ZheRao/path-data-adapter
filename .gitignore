@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.python-version
+
+# Poetry
+poetry*
+
+# Doc
+*.pdf
