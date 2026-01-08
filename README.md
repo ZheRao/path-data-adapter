@@ -104,4 +104,4 @@ This table shows **what happens to the data at each stage**, without requiring t
 
 ## In Short
 
-> **This adapter turns operational data into insight-ready reporting — reliably, consistently, and at scale.**
+> **This adapter turns operational data into insight-ready reporting.**
