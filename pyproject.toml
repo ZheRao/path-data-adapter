@@ -22,3 +22,11 @@ name = "path-adapter"
 packages = [
   { include = "path_adapter", from = "src" }
 ]
+
+[tool.setuptools.package-data]
+path_adapter = ["configs/**/*.json"]
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.1.0,<8.0.0)"
+]
