@@ -1,0 +1,42 @@
+{
+    "includes": ["Commodity","Customer","Sales Order","Packing Plant","Ship Week","Line Item","CAD Price Per LB","Item Weight",
+                 "CAD Price","Currency","Exchange Rate","Order Status","Product Weight","Quantity","Sale Price",
+                 "Sale Price Per LB","Ship Date.Day","Ship Date.Month","Ship Date.Year","Comments"],
+
+    "excludes": ["Line Capability","Delivered Weight","Master Item","Paid on Delivery","Pallet Type","Shipping Notes","Sold Quantity","Weight"],
+
+    "column_rename": {
+        "Commodity": "CropName",
+        "Customer": "CustomerName",
+        "Sales Order": "SOID",
+        "Packing Plant": "PackingLocation",
+        "Ship Week": "ShipWeek#",
+        "Line Item": "CropDetail",
+        "CAD Price Per LB": "UnitPriceCAD",
+        "Item Weight": "Weight",
+        "CAD Price": "PriceCAD",
+        "Exchange Rate": "FXRate",
+        "Order Status": "Status",
+        "Product Weight": "ProductWeight",
+        "Sale Price": "OriginalPrice",
+        "Sale Price Per LB": "OriginalUnitPrice",
+        "Ship Date.Day": "date_day",
+        "Ship Date.Month": "date_month",
+        "Ship Date.Year": "date_year"
+    },
+
+    "explanation": {
+        "Packing Plant": "Location is derived from this column",
+        "Ship Week": "Week # in a given year - for comparison between weekly sales across year",
+        "Line Item": "Detailed commodity description, including internal commodity number",
+        "CAD Price Per LB": "Unit price converted into CAD given exchange rate",
+        "Item Weight": "Weight of everything excluding things like pallet",
+        "CAD Price": "CAD unit price x item weight",
+        "Order Status": "unpacked - packed - shipped - verified (sales price verified) - exported(QBO)",
+        "Pallet Type": "Quality of shipping",
+        "Product Weight": "Weight of one bag/unit",
+        "Quantity": "# of unites/cases",
+        "Sold Quantity": "Not used, should always be Quantity",
+        "Weight": "Not used, includes weights of everything, including pallet"
+    }
+}
